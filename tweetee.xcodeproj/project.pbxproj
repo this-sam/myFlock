@@ -1615,6 +1615,7 @@
 				);
 				PRODUCT_NAME = tweetee;
 				SDKROOT = iphonesimulator4.0;
+				VALID_ARCHS = "armv6 armv7 i386";
 			};
 			name = Debug;
 		};
