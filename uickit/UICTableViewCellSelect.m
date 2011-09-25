@@ -3,8 +3,17 @@
 @implementation UICTableViewCellSelect
 
 
+
+#pragma mark -
+#pragma mark Note Section
+//
+//.
+//.
+//
+#pragma mark -
+
 - (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
-    if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
+    if ((self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdentifier])) {
 
 //		self.selectionStyle = UITableViewCellSelectionStyleNone;
 

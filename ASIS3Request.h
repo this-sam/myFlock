@@ -26,7 +26,7 @@ typedef enum _ASIS3ErrorType {
 #if !TARGET_OS_IPHONE && MAC_OS_X_VERSION_10_5 < MAC_OS_X_VERSION_MAX_ALLOWED
 @interface ASIS3Request : ASIHTTPRequest <NSXMLParserDelegate> {
 #else
-@interface ASIS3Request : ASIHTTPRequest {
+@interface ASIS3Request : ASIHTTPRequest <NSXMLParserDelegate> {
 
 #endif
 	// Your S3 access key. Set it on the request, or set it globally using [ASIS3Request setSharedAccessKey:]

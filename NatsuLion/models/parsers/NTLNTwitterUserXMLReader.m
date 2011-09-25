@@ -1,10 +1,17 @@
 #import "NTLNTwitterUserXMLReader.h"
 
+
 @implementation NTLNTwitterUserXMLReader
 
 @synthesize users;
 
-- (void)parseXMLData:(NSData *)data {
+
+    
+//    
+//. NTLNTwitterUserXMLReader does not implement the correct ParserDelegate
+//. added <NSXMLParserDelegate> protocol
+//
+  - (void)parseXMLData:(NSData *)data {  
 	users = [[NSMutableArray alloc] init];
 	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
     [parser setDelegate:self];

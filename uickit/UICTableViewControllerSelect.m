@@ -17,10 +17,12 @@
 
 - (void)setCellCheckmarkAndColor:(UITableViewCell*)cell {
 	if (prototype.selectedIndex == cell.tag) {
-		cell.textColor = [UIColor colorWithRed:(0x32/255.0) green:(0x4f/255.0) blue:(0x85/255.0) alpha:1.0];
+        cell.textLabel.textColor = [UIColor colorWithRed:(0x32/255.0) green:(0x4f/255.0) blue:(0x85/255.0) alpha:1.0];
+//		cell.textColor = [UIColor colorWithRed:(0x32/255.0) green:(0x4f/255.0) blue:(0x85/255.0) alpha:1.0];
 		cell.accessoryType = UITableViewCellAccessoryCheckmark;
 	} else {
-		cell.textColor = [UIColor blackColor];
+        cell.textLabel.textColor = [UIColor blackColor];
+//		cell.textColor = [UIColor blackColor];
 		cell.accessoryType = UITableViewCellAccessoryNone;
 	}
 }
