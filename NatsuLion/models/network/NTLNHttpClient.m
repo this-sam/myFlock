@@ -5,7 +5,7 @@
 @synthesize recievedData, statusCode;
 
 - (id)init {
-	if (self = [super init]) {
+	if ((self = [super init])) {
 		[self reset];
 	}
 	return self;
@@ -21,6 +21,10 @@
 
 + (NSString*)stringEncodedWithBase64:(NSString*)str
 {
+//    
+//    .stringWithCString appears to be deprecated will convert to UTF8
+//    
+    
 	static const char *tbl = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
 	const char *s = [str UTF8String];
@@ -53,7 +57,10 @@
 	
 	*p = '\0';
 	
-	NSString *ret = [NSString stringWithCString:tmp];
+    
+    //UTF8 implementation
+    //+(id)stringWithCString:(const char *)cString encoding:(NSStringEncoding)enc
+	NSString *ret = [NSString stringWithCString:tmp encoding:NSUTF8StringEncoding];
 	free(tmp);
 
 	return ret;
