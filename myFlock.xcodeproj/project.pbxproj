@@ -232,9 +232,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1D6058910D05DD3D006BFB54 /* tweetee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tweetee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* myFlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* tweetee_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tweetee_Prefix.pch; path = ../../tweetee_Prefix.pch; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* myFlock_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myFlock_Prefix.pch; path = ../../myFlock_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1EF37A0FA6C46200BD452F /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		8D3576F20E65D90E00A22D11 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = resources/Default.png; sourceTree = "<group>"; };
@@ -602,7 +602,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* tweetee.app */,
+				1D6058910D05DD3D006BFB54 /* myFlock.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -800,7 +800,7 @@
 		F1474EF00FD3F457007D9F4C /* app */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* tweetee_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* myFlock_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				F1474EF10FD3F457007D9F4C /* NTLNAppDelegate.h */,
 				F1474EF20FD3F457007D9F4C /* NTLNAppDelegate.m */,
@@ -1312,9 +1312,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* tweetee */ = {
+		1D6058900D05DD3D006BFB54 /* myFlock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "tweetee" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "myFlock" */;
 			buildPhases = (
 				F13E2ABE0FB7EBDB0086B0E7 /* ShellScript */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
@@ -1326,9 +1326,9 @@
 			);
 			dependencies = (
 			);
-			name = tweetee;
+			name = myFlock;
 			productName = tweetee;
-			productReference = 1D6058910D05DD3D006BFB54 /* tweetee.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* myFlock.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1336,7 +1336,7 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "tweetee" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "myFlock" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -1350,7 +1350,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* tweetee */,
+				1D6058900D05DD3D006BFB54 /* myFlock */,
 			);
 		};
 /* End PBXProject section */
@@ -1592,15 +1592,15 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Corrado Ignoti (S783ZJLLQS)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Corrado Ignoti (S783ZJLLQS)";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = tweetee_Prefix.pch;
+				GCC_PREFIX_HEADER = myFlock_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = ENABLE_OAUTH;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = Info.plist;
@@ -1613,22 +1613,21 @@
 					"\"$(SRCROOT)/libs/route-me/Device\"",
 					"\"$(SRCROOT)/libs/route-me/Simulator\"",
 				);
-				PRODUCT_NAME = tweetee;
+				PRODUCT_NAME = myFlock;
 				SDKROOT = iphonesimulator4.0;
-				VALID_ARCHS = "armv6 armv7 i386";
 			};
 			name = Debug;
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Corrado Ignoti (S783ZJLLQS)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Corrado Ignoti (S783ZJLLQS)";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = tweetee_Prefix.pch;
+				GCC_PREFIX_HEADER = myFlock_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = Info.plist;
@@ -1641,7 +1640,7 @@
 					"\"$(SRCROOT)/libs/route-me/Device\"",
 					"\"$(SRCROOT)/libs/route-me/Simulator\"",
 				);
-				PRODUCT_NAME = tweetee;
+				PRODUCT_NAME = myFlock;
 				SDKROOT = iphonesimulator4.0;
 			};
 			name = Release;
@@ -1651,7 +1650,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_ENTITLEMENTS = dist.plist;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Takuma Mori";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -1660,22 +1659,21 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = DefaultProfileUuid;
 				SDKROOT = iphoneos3.0;
-				VALID_ARCHS = "armv6 armv7";
+				VALID_ARCHS = "armv6 armv7 i386";
 			};
 			name = Distribution_adhoc;
 		};
 		8D542AC50E4C972E00F1E4EC /* Distribution_adhoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Corrado Ignoti (S783ZJLLQS)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Corrado Ignoti (S783ZJLLQS)";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = tweetee_Prefix.pch;
+				GCC_PREFIX_HEADER = myFlock_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = Info.plist;
@@ -1688,7 +1686,7 @@
 					"\"$(SRCROOT)/libs/route-me/Device\"",
 					"\"$(SRCROOT)/libs/route-me/Simulator\"",
 				);
-				PRODUCT_NAME = tweetee;
+				PRODUCT_NAME = myFlock;
 				SDKROOT = iphonesimulator4.0;
 			};
 			name = Distribution_adhoc;
@@ -1697,7 +1695,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1708,8 +1706,7 @@
 				OTHER_CFLAGS = "-I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/usr/include/libxml2";
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos4.3;
+				SDKROOT = iphoneos3.0;
 				VALID_ARCHS = "armv6 armv7 i386";
 			};
 			name = Debug;
@@ -1718,8 +1715,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -1728,10 +1725,8 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos3.0;
-				VALID_ARCHS = "armv6 armv7";
+				VALID_ARCHS = "armv6 armv7 i386";
 			};
 			name = Release;
 		};
@@ -1739,8 +1734,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Corrado Ignoti";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Corrado Ignoti";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -1749,24 +1744,22 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "AEC8091D-2C50-4DB0-9CEF-60FDAC6A8E89";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AEC8091D-2C50-4DB0-9CEF-60FDAC6A8E89";
 				SDKROOT = iphoneos3.1.2;
-				VALID_ARCHS = "armv6 armv7";
+				VALID_ARCHS = "armv6 armv7 i386";
 			};
 			name = Distribution_appstore;
 		};
 		FA2A3DE2110B308A00BCBF65 /* Distribution_appstore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Corrado Ignoti";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Corrado Ignoti";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = tweetee_Prefix.pch;
+				GCC_PREFIX_HEADER = myFlock_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = ENABLE_OAUTH;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = Info.plist;
@@ -1780,7 +1773,7 @@
 					"\"$(SRCROOT)/libs/route-me/Simulator\"",
 				);
 				OTHER_CFLAGS = "-I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/usr/include/libxml2";
-				PRODUCT_NAME = tweetee;
+				PRODUCT_NAME = myFlock;
 				PROVISIONING_PROFILE = "AEC8091D-2C50-4DB0-9CEF-60FDAC6A8E89";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AEC8091D-2C50-4DB0-9CEF-60FDAC6A8E89";
 				SDKROOT = iphonesimulator4.0;
@@ -1790,7 +1783,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "tweetee" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "myFlock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -1801,7 +1794,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "tweetee" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "myFlock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

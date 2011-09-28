@@ -14,12 +14,12 @@
 @implementation TWTListTweetsViewController
 @synthesize listID;
 
-- (id)initWithListID:(NSString*)listID {
-	if (self = [super init]) {
+- (id)initWithListID:(NSString*)list_id {
+	if ((self = [super init])) {
 		NSString *archiveName = [NSString stringWithFormat:@"%@-listTweet.plist", listID];
 		timeline = [[NTLNTimeline alloc] initWithDelegate:self 
 									  withArchiveFilename:archiveName];
-		self.listID=listID;
+		self.listID=list_id;
 	}
 	return self;
 }

@@ -37,8 +37,12 @@
 
 - (id)initWithName:(NSString *)aName value:(NSString *)aValue 
 {
-    if (self = [super init])
+    if ((self = [super init]))
 	{
+        
+        NSLog(@"LOG__*__: OARequestParameter initWithName");
+        NSLog(@"LOG__*__: name: %@ value: %@",aName, aValue);
+        
 		self.name = aName;
 		self.value = aValue;
 	}
