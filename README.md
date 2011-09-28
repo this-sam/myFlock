@@ -1,3 +1,7 @@
+<h1>myFlock 0.1</h1>
+
+This app is an extension of Tweetee.
+
 <h1>NatsuLion for iPhone</h1>
 
 <h2>LICENSE</h2>
