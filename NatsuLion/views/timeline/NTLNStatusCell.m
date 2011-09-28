@@ -123,7 +123,7 @@
 }
 
 - (id)initWithIsEven:(BOOL)iseven {
-	self = [super initWithFrame:CGRectZero reuseIdentifier:CELL_RESUSE_ID];
+	self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CELL_RESUSE_ID];
 	isEven = iseven;
 	[self createCell];
 	return self;

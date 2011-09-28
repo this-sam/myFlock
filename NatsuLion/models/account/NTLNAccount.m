@@ -7,7 +7,7 @@
 GTMOBJECT_SINGLETON_BOILERPLATE(NTLNAccount, sharedInstance)
 
 - (id)init {
-	if (self = [super init]) {
+	if ((self = [super init])) {
 		userToken = [[OAToken alloc] initWithUserDefaultsUsingServiceProviderName:NTLN_OAUTH_PROVIDER 
 																		   prefix:NTLN_OAUTH_PREFIX];
 		[self update];

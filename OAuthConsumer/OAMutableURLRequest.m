@@ -44,11 +44,14 @@
             realm:(NSString *)aRealm
 signatureProvider:(id<OASignatureProviding, NSObject>)aProvider 
 {
-    if (self = [super initWithURL:aUrl
+    if ((self = [super initWithURL:aUrl
 					  cachePolicy:NSURLRequestReloadIgnoringCacheData
-				  timeoutInterval:10.0])
+				  timeoutInterval:10.0]))
 	{    
 		consumer = [aConsumer retain];
+        
+        NSLog(@"LOG__*__: OAMutableRequest initWithURL");
+        
 		
 		// empty token for Unauthorized Request Token transaction
 		if (aToken == nil)
@@ -83,9 +86,9 @@ signatureProvider:(id<OASignatureProviding, NSObject>)aProvider
             nonce:(NSString *)aNonce
         timestamp:(NSString *)aTimestamp 
 {
-	if (self = [super initWithURL:aUrl
+	if ((self = [super initWithURL:aUrl
 					  cachePolicy:NSURLRequestReloadIgnoringCacheData
-				  timeoutInterval:10.0])
+				  timeoutInterval:10.0]))
 	{    
 		consumer = [aConsumer retain];
 		
@@ -176,6 +179,11 @@ signatureProvider:(id<OASignatureProviding, NSObject>)aProvider
     // OAuth Spec, Section 9.1.1 "Normalize Request Parameters"
     // build a sorted array of both request parameters and OAuth header parameters
     NSMutableArray *parameterPairs = [NSMutableArray  arrayWithCapacity:(6 + [[self parameters] count])]; // 6 being the number of OAuth params in the Signature Base String
+    
+//    
+//.     Requests OAuthenication here.   
+//.    
+//    
     
 	[parameterPairs addObject:[[OARequestParameter requestParameterWithName:@"oauth_consumer_key" value:consumer.key] URLEncodedNameValuePair]];
 	[parameterPairs addObject:[[OARequestParameter requestParameterWithName:@"oauth_signature_method" value:[signatureProvider name]] URLEncodedNameValuePair]];

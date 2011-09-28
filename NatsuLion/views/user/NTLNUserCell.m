@@ -12,7 +12,7 @@
 @synthesize user;
 
 - (id)initWithFrame:(CGRect)rect reuseIdentifier:(NSString*)anId {
-	if (self = [super initWithFrame:rect reuseIdentifier:anId]) {
+	if ((self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:anId])) {
 		[self createCell];
 	}
 	return self;
