@@ -30,7 +30,7 @@
 																 withPlaceholder:@"required" 
 															 withUserDefaultsKey:TWT_PREFERENCE_RIL_USERID];
 	
-	UICPrototypeTableCellTextInput *c2 = [UICPrototypeTableCell cellForTextInput:@"Passowrd" 
+	UICPrototypeTableCellTextInput *c2 = [UICPrototypeTableCell cellForTextInput:@"Password" 
 																 withPlaceholder:@"required" 
 															 withUserDefaultsKey:TWT_PREFERENCE_RIL_PASSWORD];
 	c2.secure = YES;
