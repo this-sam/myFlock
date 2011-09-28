@@ -199,6 +199,9 @@
 		[[NTLNTwitterPost shardInstance] updateText:text];
 	} 
 #ifdef ENABLE_OAUTH
+//    
+//.     Callback URL is mentioned here.
+//    
 	else if ([[NTLNOAuthConsumer sharedInstance] isCallbackURL:url]) {
 		NSLog(@"Weakup, it's a callback");
 		[[NTLNOAuthConsumer sharedInstance] accessToken:url];

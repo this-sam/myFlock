@@ -157,7 +157,7 @@ static NSString *nameOfYourApp = @"Tweetee";		//Enter the name of your applicati
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-	self.apiResponse = [NSDictionary dictionaryWithObjectsAndKeys:@"X-Error",[error localizedDescription]];
+	self.apiResponse = [NSDictionary dictionaryWithObjectsAndKeys:@"X-Error",[error localizedDescription],nil];
 	[self finishConnection];
 	[connection release];	
 }

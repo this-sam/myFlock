@@ -9,8 +9,8 @@
 
 - (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
 	
-    if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
-		sw = [[[[UISwitch alloc] initWithFrame:CGRectMake(206, 9, 0, 0)] autorelease] retain];		
+    if ((self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdentifier])) {
+		sw = [[[[UISwitch alloc] initWithFrame:CGRectMake(206, 9, 0, 0)] autorelease] retain];
 		[sw addTarget:self 
 			   action:@selector(switchPushed:)
 	 forControlEvents:UIControlEventValueChanged];

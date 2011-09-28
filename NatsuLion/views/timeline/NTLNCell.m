@@ -4,7 +4,7 @@
 @implementation NTLNCellBackground
 
 - (id)initWithDelegate:(NSObject<NTLNCellBackgroundDelegate>*)aDelegate {
-	if (self = [super init]) {
+	if ((self = [super init])) {
 		delegate = [aDelegate retain];
 	}
 	return self;
@@ -117,7 +117,7 @@ static void drawRectBackground(CGRect rect, UIColor *bgColor)
 @synthesize cellType, bgcolor;
 
 - (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
-    if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
+    if ((self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdentifier])) {
 		self.selectedBackgroundView = [[[NTLNCellBackground alloc] 
 									initWithDelegate:self] autorelease];
 		self.selectedBackgroundView.backgroundColor = [UIColor clearColor];

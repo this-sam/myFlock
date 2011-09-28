@@ -32,8 +32,9 @@
 
 - (id)initWithRequest:(OAMutableURLRequest *)aRequest response:(NSURLResponse *)aResponse didSucceed:(BOOL)success 
 {
-    if (self = [super init])
+    if ((self = [super init]))
 	{
+        NSLog(@"LOG__*__: OAServiceTicket.h initWithRequest");
 		self.request = aRequest;
 		self.response = aResponse;
 		self.didSucceed = success;
