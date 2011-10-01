@@ -20,6 +20,7 @@
 #import "TWTTrendsViewController.h"
 #import "TWTTwitterExtendedAccountViewController.h"
 #import "TWTSearchViewController.h"
+#import "MYFLLocalTweetViewController.h"
 
 @implementation NTLNAppDelegate
 
@@ -79,6 +80,9 @@
 	
 	listViewController = [[TWTListViewController alloc] init];
 	
+	//iOS Dev
+	localTweetViewController = [[MYFLLocalTweetViewController alloc] init];
+	
 	
 	UINavigationController *nfri = [[[UINavigationController alloc] 
 										initWithRootViewController:friendsViewController] autorelease];
@@ -106,6 +110,14 @@
 	
 	UINavigationController *lvctrl = [[[UINavigationController alloc]
 									 initWithRootViewController:listViewController] autorelease];
+	
+	//iOS Dev -- need to call a function to load this from the .m file
+	//WORKS! UINavigationController *myfloc = [[MYFLLocalTweetViewController alloc] initWithSearch: @"#btv"];
+	
+	UINavigationController *myfloc = [[MYFLLocalTweetViewController alloc] initWithLocation];
+	
+	/*[[[UINavigationController alloc]
+									initwithRootViewController:localTweetViewController] autorelease];*/
 
 	[nfri.navigationBar setBarStyle:UIBarStyleBlackOpaque];
 	[nfri.tabBarItem setTitle:@"Friends"];
@@ -149,11 +161,18 @@
 	[nsfv.navigationBar setBarStyle:UIBarStyleBlackOpaque];
 	[nsfv.tabBarItem setTitle:@"Favorites"];
 	[nsfv.tabBarItem setImage:[UIImage imageNamed:@"favorites.png"]];
+	
+	//iOS Dev
+	//[myfloc.navigationBar setBarStyle:UIBarStyleBlackOpaque];
+	/*To add this, the MYFLLocalTweetViewController needs a nav bar... this will be where we select proximity to location*/
+	[myfloc.tabBarItem setTitle:@"myFlock"];
+	[myfloc.tabBarItem setImage:[UIImage imageNamed:@"trends.png"]];
 
 	[[NTLNRateLimit shardInstance] updateNavigationBarColor:tabBarController.moreNavigationController.navigationBar];
 
+	//iOS Dev
 	[tabBarController setViewControllers:
-		[NSArray arrayWithObjects:nfri, nrep, nsdm, nsfv, nsen, nunr, nset, lvctrl, ttrn, srcvc, nil]];
+	 [NSArray arrayWithObjects:nfri, nrep, nsdm, nsfv, nsen, nunr, nset, lvctrl, ttrn, srcvc, myfloc, nil]];
 
 	[self setTabOrderIfSaved];
 }

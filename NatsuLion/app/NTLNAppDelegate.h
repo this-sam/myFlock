@@ -14,6 +14,9 @@
 @class TWTListViewController;
 @class TWTSearchViewController;
 
+//iOS Dev
+@class MYFLLocalTweetViewController;
+
 @interface NTLNAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate, NTLNCacheCleanerDelegate> {
 	UIWindow *window;
 	UITabBarController *tabBarController;
@@ -31,6 +34,8 @@
 	TWTTrendsViewController *trendsViewController;
 	TWTSearchViewController *searchViewController;
 	TWTListViewController *listViewController;
+	
+	MYFLLocalTweetViewController *localTweetViewController;
 
 	BOOL applicationActive;
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		2C7CBEA914376ACC0070F5E9 /* MYFLLocalTweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CBEA814376ACC0070F5E9 /* MYFLLocalTweetViewController.m */; };
 		8D1EF37B0FA6C46200BD452F /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D1EF37A0FA6C46200BD452F /* libxml2.2.dylib */; };
 		8D3576F30E65D90E00A22D11 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3576F20E65D90E00A22D11 /* Default.png */; };
 		8D3C40150F8FC26300E69E26 /* more_button_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3C40130F8FC26300E69E26 /* more_button_normal.png */; };
@@ -234,6 +235,8 @@
 /* Begin PBXFileReference section */
 		1D6058910D05DD3D006BFB54 /* myFlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
+		2C7CBEA714376ACC0070F5E9 /* MYFLLocalTweetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFLLocalTweetViewController.h; sourceTree = "<group>"; };
+		2C7CBEA814376ACC0070F5E9 /* MYFLLocalTweetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFLLocalTweetViewController.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* myFlock_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myFlock_Prefix.pch; path = ../../myFlock_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1EF37A0FA6C46200BD452F /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
@@ -614,6 +617,7 @@
 				FA60B58D10E3BBEB006ECFF9 /* Twitter_apikeys.h */,
 				FAA454FA115A3CCC00829EDF /* RIL_apikeys.h */,
 				FAEBBAB410E8A52F006229FC /* bit_ly_apikeys.h */,
+				2C7CBE9D14376A9D0070F5E9 /* myFlock */,
 				FA60B5E510E60AF9006ECFF9 /* external */,
 				F1474EEF0FD3F457007D9F4C /* NatsuLion */,
 				F1474FD20FD3F486007D9F4C /* uickit */,
@@ -657,6 +661,31 @@
 				FA7A6D3710ECC01A005F6EAB /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C7CBE9D14376A9D0070F5E9 /* myFlock */ = {
+			isa = PBXGroup;
+			children = (
+				2C7CBE9E14376AA20070F5E9 /* controllers */,
+			);
+			name = myFlock;
+			sourceTree = "<group>";
+		};
+		2C7CBE9E14376AA20070F5E9 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C7CBE9F14376AAC0070F5E9 /* tabview */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		2C7CBE9F14376AAC0070F5E9 /* tabview */ = {
+			isa = PBXGroup;
+			children = (
+				2C7CBEA714376ACC0070F5E9 /* MYFLLocalTweetViewController.h */,
+				2C7CBEA814376ACC0070F5E9 /* MYFLLocalTweetViewController.m */,
+			);
+			name = tabview;
 			sourceTree = "<group>";
 		};
 		8D3ECB8E0F8929FA0090DCB1 /* backgrounds */ = {
@@ -1583,6 +1612,7 @@
 				FAF637F3115682F900413992 /* TWTRILAccountViewController.m in Sources */,
 				FAF6385411568C9400413992 /* ReadItLaterLite.m in Sources */,
 				FACDD3E3115F9B9200E3E612 /* TWTSearchViewController.m in Sources */,
+				2C7CBEA914376ACC0070F5E9 /* MYFLLocalTweetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1694,6 +1724,7 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
