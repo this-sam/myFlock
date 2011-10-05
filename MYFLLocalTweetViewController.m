@@ -32,6 +32,8 @@
 }
 
 -(id)initWithLocation{
+	//THOUGHTS: ADD FUNCTION TO GET LOCATION IN NATSULION/MODELS/NETWORK/NTLNTwitterUserClient
+	//THIS IS INTERFACE BETWEEN THE APP AND TWITTER
 	self.searchString = @"#btv";//userInfo.screen_name;
 	return self;
 }
