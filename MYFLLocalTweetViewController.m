@@ -60,34 +60,6 @@
 }
 
 
-/*
- - (void)viewWillAppear:(BOOL)animated {
- [super viewWillAppear:animated];
- }
- */
-/*
- - (void)viewDidAppear:(BOOL)animated {
- [super viewDidAppear:animated];
- }
- */
-/*
- - (void)viewWillDisappear:(BOOL)animated {
- [super viewWillDisappear:animated];
- }
- */
-/*
- - (void)viewDidDisappear:(BOOL)animated {
- [super viewDidDisappear:animated];
- }
- */
-
-/*
- // Override to allow orientations other than the default portrait orientation.
- - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
- // Return YES for supported orientations
- return (interfaceOrientation == UIInterfaceOrientationPortrait);
- }
- */
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -145,27 +117,7 @@
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         //cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-	/*
-	 if (cell == nil) {
-	 NSArray *topLevelObjects = [[NSBundle mainBundle]
-	 loadNibNamed:@"TWTTrendsCustomCell"
-	 owner:nil options:nil];
-	 for (id currentObject in topLevelObjects) {
-	 if ([currentObject isKindOfClass:[UITableViewCell class]]){
-	 cell = (TWTTrendsCustomCell *) currentObject;
-	 break;
-	 }
-	 }
-	 }*/
-    
-    // Set up the cell...
-	
-	/*
-	 cell.tweet.text = [[tweetsArray objectAtIndex:indexPath.row] objectForKey:@"tweet"];
-	 cell.from.text = [[tweetsArray objectAtIndex:indexPath.row] objectForKey:@"from"];
-	 cell.userProfileImage = nil;
-	 */
-	//cell.backgroundView
+
 	cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
 	cell.textLabel.numberOfLines = 5;
 	cell.textLabel.font = [UIFont systemFontOfSize:14.0];
@@ -183,10 +135,6 @@
 	cell.detailTextLabel.font = [UIFont boldSystemFontOfSize:10];
 	cell.detailTextLabel.text = details;
 	
-	//UIImage *img = [UIImage imageNamed:@"http://a1.twimg.com/profile_images/651290868/081220_091222_normal.JPG"];
-	//cell.imageView.image = [UIImageView];
-	//NTLNStatus *s = [[NTLNStatus alloc] initWithMessage:[[tweetsArray objectAtIndex:indexPath.row] objectForKey:@"tweet"]];
-	//[cell updateCell:s isEven:NO];
 	return cell;
 }
 
@@ -201,46 +149,6 @@
 	utvc.screenName = [screenNamesArray objectAtIndex:[indexPath row]];
 	[[self navigationController] pushViewController:utvc animated:YES];
 }
-
-
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
- 
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
- }   
- else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }   
- }
- */
-
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
- }
- */
-
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
 
 
 - (void)dealloc {
