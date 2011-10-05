@@ -1604,15 +1604,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = ENABLE_OAUTH;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/libs/CloudMade/Device\"",
-					"\"$(SRCROOT)/libs/CloudMade/Simulator\"",
-					"\"$(SRCROOT)/libs/Proj4/Device\"",
-					"\"$(SRCROOT)/libs/Proj4/Simulator\"",
-					"\"$(SRCROOT)/libs/route-me/Device\"",
-					"\"$(SRCROOT)/libs/route-me/Simulator\"",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = myFlock;
 				SDKROOT = iphonesimulator4.0;
 			};
