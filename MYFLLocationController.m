@@ -10,7 +10,11 @@
 
 
 @implementation MYFLLocationController
+
+
 @synthesize locationManager;
+@synthesize location;
+@synthesize reverseGeocoder;
 
 
 
@@ -35,6 +39,9 @@
 -(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
     NSLog(@"\nLocation: %@\n",[newLocation description]);
+	self.reverseGeocoder = [[MKReverseGeocoder alloc] initWithCoordinate:newLocation.coordinate];	
+	self.reverseGeocoder.delegate = self;
+	[reverseGeocoder start];
 }
 
 
@@ -43,5 +50,15 @@
     NSLog(@"Error: %@", [error description]);
 }
 
+-(void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFailWithError:(NSError *)error
+{
+	NSLog(@"Error: %@", [error description]);
+}
+
+-(void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFindPlacemark:(MKPlacemark *)placemark
+{
+	NSLog(@"\nLocation Name: %@\n", [placemark description]);
+	self.location = placemark;
+}
 
 @end

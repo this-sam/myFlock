@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface MYFLLocationController : NSObject <CLLocationManagerDelegate> {
+@interface MYFLLocationController : NSObject <CLLocationManagerDelegate, MKReverseGeocoderDelegate> {
     CLLocationManager *locationManager;
+	MKPlacemark *location;	
+	MKReverseGeocoder *reverseGeocoder;
 }
 
 @property (nonatomic, retain) CLLocationManager *locationManager;
-
+@property (nonatomic, retain) MKPlacemark *location;
+@property (nonatomic, retain) MKReverseGeocoder *reverseGeocoder;
 
 
 
@@ -29,7 +33,8 @@
 
 -(void) locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation;
 -(void) locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error;
-
+-(void) reverseGeocoder:(MKReverseGeocoder *)geocoder didFailWithError:(NSError *)error;
+-(void) reverseGeocoder:(MKReverseGeocoder *)geocoder didFindPlacemark:(MKPlacemark *)placemark;
 
 
 @end
