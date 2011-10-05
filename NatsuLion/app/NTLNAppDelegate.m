@@ -166,7 +166,7 @@
 	//[myfloc.navigationBar setBarStyle:UIBarStyleBlackOpaque];
 	/*To add this, the MYFLLocalTweetViewController needs a nav bar... this will be where we select proximity to location*/
 	[myfloc.tabBarItem setTitle:@"myFlock"];
-	[myfloc.tabBarItem setImage:[UIImage imageNamed:@"trends.png"]];
+	[myfloc.tabBarItem setImage:[UIImage imageNamed:@"myFlock.png"]];
 
 	[[NTLNRateLimit shardInstance] updateNavigationBarColor:tabBarController.moreNavigationController.navigationBar];
 
