@@ -165,6 +165,7 @@
 	//iOS Dev
 	//[myfloc.navigationBar setBarStyle:UIBarStyleBlackOpaque];
 	/*To add this, the MYFLLocalTweetViewController needs a nav bar... this will be where we select proximity to location*/
+	//[myfloc.navigationBar setBarStyle:UIBarStyleBlackOpaque];
 	[myfloc.tabBarItem setTitle:@"myFlock"];
 	[myfloc.tabBarItem setImage:[UIImage imageNamed:@"myFlock.png"]];
 
@@ -172,7 +173,7 @@
 
 	//iOS Dev
 	[tabBarController setViewControllers:
-	 [NSArray arrayWithObjects:nfri, nrep, nsdm, nsfv, nsen, nunr, nset, lvctrl, ttrn, srcvc, myfloc, nil]];
+	 [NSArray arrayWithObjects:nfri, nrep, nsdm, myfloc, nsfv, nsen, nunr, nset, lvctrl, ttrn, srcvc, nil]];
 
 	[self setTabOrderIfSaved];
 }
