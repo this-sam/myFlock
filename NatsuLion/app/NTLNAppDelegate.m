@@ -173,7 +173,7 @@
 
 	//iOS Dev
 	[tabBarController setViewControllers:
-	 [NSArray arrayWithObjects:nfri, nrep, nsdm, myfloc, nsfv, nsen, nunr, nset, lvctrl, ttrn, srcvc, nil]];
+	 [NSArray arrayWithObjects:nfri, nrep, /*nsdm,*/ myfloc, nset, nsfv, nsen, nunr, lvctrl, ttrn, srcvc, nil]];
 
 	[self setTabOrderIfSaved];
 }
