@@ -114,7 +114,7 @@
 	//iOS Dev -- need to call a function to load this from the .m file
 	//WORKS! UINavigationController *myfloc = [[MYFLLocalTweetViewController alloc] initWithSearch: @"#btv"];
 	
-	UINavigationController *myfloc = [[MYFLLocalTweetViewController alloc] initWithLocation];
+	UINavigationController *myfloc = [[[MYFLLocalTweetViewController alloc] initWithLocation] autorelease];
 	
 	/*[[[UINavigationController alloc]
 									initwithRootViewController:localTweetViewController] autorelease];*/
