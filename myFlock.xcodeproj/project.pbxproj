@@ -71,6 +71,7 @@
 		8DDF89340FA48FB600E59517 /* more_button_normal_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DDF89330FA48FB600E59517 /* more_button_normal_b.png */; };
 		8DF5E3760F910D340096B849 /* dm.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF5E3740F910D340096B849 /* dm.png */; };
 		8DF5E3770F910D340096B849 /* favorites.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF5E3750F910D340096B849 /* favorites.png */; };
+		ACB5FF22143D014A00004EDE /* myFlock.png in Resources */ = {isa = PBXBuildFile; fileRef = ACB5FF21143D014A00004EDE /* myFlock.png */; };
 		D9A202D4143CB42700C6E709 /* MYFLLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A202D3143CB42700C6E709 /* MYFLLocationController.m */; };
 		F1474F8B0FD3F457007D9F4C /* NTLNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1474EF20FD3F457007D9F4C /* NTLNAppDelegate.m */; };
 		F1474F8C0FD3F457007D9F4C /* NTLNTweetPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1474EF60FD3F457007D9F4C /* NTLNTweetPostViewController.m */; };
@@ -308,6 +309,7 @@
 		8DDF89330FA48FB600E59517 /* more_button_normal_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more_button_normal_b.png; sourceTree = "<group>"; };
 		8DF5E3740F910D340096B849 /* dm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dm.png; sourceTree = "<group>"; };
 		8DF5E3750F910D340096B849 /* favorites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorites.png; sourceTree = "<group>"; };
+		ACB5FF21143D014A00004EDE /* myFlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = myFlock.png; path = resources/myFlock.png; sourceTree = "<group>"; };
 		D9A202D2143CB42700C6E709 /* MYFLLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFLLocationController.h; sourceTree = "<group>"; };
 		D9A202D3143CB42700C6E709 /* MYFLLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFLLocationController.m; sourceTree = "<group>"; };
 		F1474EF10FD3F457007D9F4C /* NTLNAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTLNAppDelegate.h; sourceTree = "<group>"; };
@@ -707,6 +709,7 @@
 		8DBA55C20E96B75800109F5D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				ACB5FF21143D014A00004EDE /* myFlock.png */,
 				8D3ECB8E0F8929FA0090DCB1 /* backgrounds */,
 				8DBB73020F87E83500B54378 /* icons */,
 				8DBB73070F87E83500B54378 /* buttons */,
@@ -1469,6 +1472,7 @@
 				FAD6E6AE111EF76200737DAC /* lists.png in Resources */,
 				FACDD432115FA0CE00E3E612 /* search.png in Resources */,
 				FA800AB0116743A000CAED0C /* trends.png in Resources */,
+				ACB5FF22143D014A00004EDE /* myFlock.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
