@@ -1,4 +1,4 @@
-<h1>myFlock 0.1</h1>
+<h1>myFlock 0.2</h1>
 
 This app is an extension of Tweetee.
 
