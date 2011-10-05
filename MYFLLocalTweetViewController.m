@@ -34,7 +34,7 @@
 -(id)initWithLocation{
 	//THOUGHTS: ADD FUNCTION TO GET LOCATION IN NATSULION/MODELS/NETWORK/NTLNTwitterUserClient
 	//THIS IS INTERFACE BETWEEN THE APP AND TWITTER
-	self.searchString = @"#btv";//userInfo.screen_name;
+	self.searchString = @"&geocode=44.47503566,-73.19574313,10mi";//userInfo.screen_name;
 	return self;
 }
 
