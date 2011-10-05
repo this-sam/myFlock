@@ -71,6 +71,7 @@
 		8DDF89340FA48FB600E59517 /* more_button_normal_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DDF89330FA48FB600E59517 /* more_button_normal_b.png */; };
 		8DF5E3760F910D340096B849 /* dm.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF5E3740F910D340096B849 /* dm.png */; };
 		8DF5E3770F910D340096B849 /* favorites.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF5E3750F910D340096B849 /* favorites.png */; };
+		D9A202D4143CB42700C6E709 /* MYFLLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A202D3143CB42700C6E709 /* MYFLLocationController.m */; };
 		F1474F8B0FD3F457007D9F4C /* NTLNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1474EF20FD3F457007D9F4C /* NTLNAppDelegate.m */; };
 		F1474F8C0FD3F457007D9F4C /* NTLNTweetPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1474EF60FD3F457007D9F4C /* NTLNTweetPostViewController.m */; };
 		F1474F8D0FD3F457007D9F4C /* NTLNAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1474EF90FD3F457007D9F4C /* NTLNAboutViewController.m */; };
@@ -307,6 +308,8 @@
 		8DDF89330FA48FB600E59517 /* more_button_normal_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more_button_normal_b.png; sourceTree = "<group>"; };
 		8DF5E3740F910D340096B849 /* dm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dm.png; sourceTree = "<group>"; };
 		8DF5E3750F910D340096B849 /* favorites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorites.png; sourceTree = "<group>"; };
+		D9A202D2143CB42700C6E709 /* MYFLLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFLLocationController.h; sourceTree = "<group>"; };
+		D9A202D3143CB42700C6E709 /* MYFLLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFLLocationController.m; sourceTree = "<group>"; };
 		F1474EF10FD3F457007D9F4C /* NTLNAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTLNAppDelegate.h; sourceTree = "<group>"; };
 		F1474EF20FD3F457007D9F4C /* NTLNAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTLNAppDelegate.m; sourceTree = "<group>"; };
 		F1474EF50FD3F457007D9F4C /* NTLNTweetPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTLNTweetPostViewController.h; sourceTree = "<group>"; };
@@ -675,6 +678,8 @@
 			isa = PBXGroup;
 			children = (
 				2C7CBE9F14376AAC0070F5E9 /* tabview */,
+				D9A202D2143CB42700C6E709 /* MYFLLocationController.h */,
+				D9A202D3143CB42700C6E709 /* MYFLLocationController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -1613,6 +1618,7 @@
 				FAF6385411568C9400413992 /* ReadItLaterLite.m in Sources */,
 				FACDD3E3115F9B9200E3E612 /* TWTSearchViewController.m in Sources */,
 				2C7CBEA914376ACC0070F5E9 /* MYFLLocalTweetViewController.m in Sources */,
+				D9A202D4143CB42700C6E709 /* MYFLLocationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

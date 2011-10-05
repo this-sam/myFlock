@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "NTLNTwitterUserClient.h"
 
+#import "MYFLLocationController.h"
+
 @interface MYFLLocalTweetViewController : UITableViewController {
 	NSString *searchString;
 	NSMutableArray *tweetsArray;
@@ -16,6 +18,11 @@
 	
 	//iOS Dev
 	NTLNUser *userInfo;
+    
+//.Location
+    MYFLLocationController *locationController;
+    
+    
 }
 
 @property (nonatomic, retain) NSString *searchString;

@@ -44,6 +44,10 @@
 	self.title=userInfo.screen_name;
 	
 	tweetsArray = [[NSMutableArray alloc] init];
+    
+//. location
+    locationController = [[MYFLLocationController alloc] init];
+    [locationController.locationManager startUpdatingLocation];
 	
 	
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
@@ -242,6 +246,8 @@
 - (void)dealloc {
     [super dealloc];
 	[screenNamesArray release];
+//   releases locationController object
+    [locationController release];
 }
 
 #pragma mark -
