@@ -114,7 +114,7 @@
 	//iOS Dev -- need to call a function to load this from the .m file
 	//WORKS! UINavigationController *myfloc = [[MYFLLocalTweetViewController alloc] initWithSearch: @"#btv"];
 	
-	UINavigationController *myfloc = [[MYFLLocalTweetViewController alloc] initWithLocation];
+	UINavigationController *myfloc = [[[MYFLLocalTweetViewController alloc] initWithLocation] autorelease];
 	
 	/*[[[UINavigationController alloc]
 									initwithRootViewController:localTweetViewController] autorelease];*/
@@ -165,6 +165,7 @@
 	//iOS Dev
 	//[myfloc.navigationBar setBarStyle:UIBarStyleBlackOpaque];
 	/*To add this, the MYFLLocalTweetViewController needs a nav bar... this will be where we select proximity to location*/
+	//[myfloc.navigationBar setBarStyle:UIBarStyleBlackOpaque];
 	[myfloc.tabBarItem setTitle:@"myFlock"];
 	[myfloc.tabBarItem setImage:[UIImage imageNamed:@"myFlock.png"]];
 
@@ -172,7 +173,7 @@
 
 	//iOS Dev
 	[tabBarController setViewControllers:
-	 [NSArray arrayWithObjects:nfri, nrep, nsdm, nsfv, nsen, nunr, nset, lvctrl, ttrn, srcvc, myfloc, nil]];
+	 [NSArray arrayWithObjects:nfri, nrep, nsdm, myfloc, nsfv, nsen, nunr, nset, lvctrl, ttrn, srcvc, nil]];
 
 	[self setTabOrderIfSaved];
 }
