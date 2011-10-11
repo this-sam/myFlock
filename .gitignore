@@ -10,3 +10,5 @@ build
 *.xcodeproj/*.pbxuser
 resources/readme.html
 *_apikeys.h
+._build
+._*

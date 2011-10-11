@@ -162,7 +162,7 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
 	[self.searchBar resignFirstResponder];
-	TWTSearchViewController *vc = [[TWTSearchedTweetsViewController alloc] initWithSearch:[self.searchBar text]];
+	TWTSearchViewController *vc = [[TWTSearchedTweetsViewController alloc] initWithSearch: [self.searchBar text]];
 	[[self navigationController] pushViewController:vc animated:YES];
 	[vc release];
 }
